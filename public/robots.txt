@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://json-lysis.xyz/sitemap.xml

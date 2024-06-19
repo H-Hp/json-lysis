@@ -16,6 +16,11 @@ Route::get('/favicons/favicon.ico', function () {
     return response()->file(public_path('favicons/favicon.ico')); 
 });
 
+Route::get('/robots.txt', function () {
+    return response()->file(public_path('robots.txt'));
+});
+
+
 Route::get('/', function () {
     return view('main');
     

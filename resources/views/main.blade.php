@@ -3,4 +3,5 @@
 <link rel="shortcut icon" href="/favicons/favicon.ico">
 <link rel="stylesheet" href="/style.css" >
 <script src="{{ asset('/index.js') }}"></script>
+<!-- Googleアナリティクストラッキング tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-N4Z9LH5GT2"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-N4Z9LH5GT2');</script>
 <h1>a</h1>

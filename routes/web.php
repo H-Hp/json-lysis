@@ -12,7 +12,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/favicons/favicon.ico', function () { 
+    return response()->file(public_path('favicons/favicon.ico')); 
+});
 
 Route::get('/', function () {
     return view('main');
+    
 });

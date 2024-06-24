@@ -37,7 +37,8 @@
         "vercel": [
             "@php artisan config:cache",
             "@php artisan route:cache",
-            "@php artisan view:cache"
+            "@php artisan view:cache",
+            "vite build"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",

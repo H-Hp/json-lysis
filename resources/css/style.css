@@ -1,4 +1,20 @@
 
+.jsons_wrap{
+    background-color: #5eabac;
+     border: #87f4f6;
+     width: 150px;
+     padding: 5px;
+  
+  }
+  .jsons_wrap p{
+    font-size: 10px;
+     
+  }
+  
+  .key{
+    color: blue;
+  }
+
 
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com

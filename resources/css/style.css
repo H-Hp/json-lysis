@@ -920,3 +920,23 @@ video {
         flex-wrap: wrap;
     }
 }
+
+
+
+
+
+
+.json-input-field{
+    background-color: #030710;
+    color: chartreuse;
+    width: 100%;
+    height:500px;
+    padding:50px;
+}
+.jsons_wrap{
+    background-color: #5eabac;
+    border: #87f4f6 1px;
+}
+.jsons_wrap h1{
+    color: #f59e0b;
+}

@@ -16,6 +16,23 @@
   }
 
 
+
+.json-input-field{
+    background-color: #030710;
+    color: chartreuse;
+    width: 100%;
+    min-height:700px;
+    padding:3px;
+}
+.jsons_wrap{
+    background-color: #5eabac;
+    border: #87f4f6 1px;
+}
+.jsons_wrap h1{
+    color: #f59e0b;
+}
+
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -941,18 +958,3 @@ video {
 
 
 
-
-.json-input-field{
-    background-color: #030710;
-    color: chartreuse;
-    width: 100%;
-    height:500px;
-    padding:50px;
-}
-.jsons_wrap{
-    background-color: #5eabac;
-    border: #87f4f6 1px;
-}
-.jsons_wrap h1{
-    color: #f59e0b;
-}

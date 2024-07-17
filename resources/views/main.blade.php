@@ -42,12 +42,9 @@
   <div class="absolute transform translate-x-full transition-transform duration-500 ease-in-out right-0 w-2/3 h-full bg-gray-700 overflow-y-auto lg:static lg:translate-x-0 lg:w-2/5 lg:mx-2 rounded-lg">
     <div class="flex flex-col border-2 overflow-y-auto rounded-lg border-gray-500 w-full ">
       <div class="flex flex-col items-start sticky top-0 w-full">
-        <div class="flex flex-col items-start lg:flex-row w-full lg:flex-wrap p-2">
+          <div class="flex flex-col items-start lg:flex-row w-full lg:flex-wrap p-2">
 
-   
-
-  </div>
-              
+          </div>              
           <div class="flex-grow w-full px-4">
             <button id="change-btn"  class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-600 font-semibold text-zinc-100 hover:bg-zinc-400 active:bg-zinc-800 active:text-zinc-100/70 w-full my-2 uppercase active:scale-[98%] transition-transform duration-100" style="background-color:#4f6574;color:white">
                 jsonを図に変換
@@ -111,6 +108,3 @@
     <button type="button" class="absolute left-20 transform -translate-x-12 bg-gray-800 text-white rounded-l py-2 px-4 lg:hidden">☰</button>
   </div>
 </div>
-
-
-

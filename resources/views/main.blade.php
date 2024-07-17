@@ -29,11 +29,25 @@
 }
 </script>
 
+<meta property="og:url" content="https://json-lysis.xyz/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JSON Iysis - Jsonを見やすい図へ変換">
+<meta property="og:site_name" content="JSON Iysis - Jsonを見やすい図へ変換">
+<meta property="og:image" content="https://json-lysis.xyz/Logo.png">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RollTall">
+<meta name="twitter:description" content="JSON Iysis - Jsonを見やすい図へ変換" />
+<meta name="twitter:image" content="https://json-lysis.xyz/Logo.png" />
+
+
 
 <div class="flex flex-col justify-between h-screen bg-gray-800 p-2 mx-auto max-w-full">
   <header class="flex items-center justify-center text-gray-200 text-2xl my-5">
     <div class="text-4xl ml-3 mr-3">JSON Iysis - Jsonを見やすい図へ変換</div>
   </header>
+
+  <a href="https://x.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button fixed left-4 top-4 md:right-14 md:top-6 text-xl text-gray" data-show-count="false" data-text="JSON Iysis - Jsonを見やすい図へ変換" data-url="https://json-lysis.xyz" data-size="summary" >ポスト</a><script async src="https://platform.x.com/widgets.js"></script>
 
     <a class="fixed left-4 top-4 md:right-14 md:top-6 text-xl text-white" href="https://github.com/H-Hp/json-lysis">
         <button class="fixed right-12 top-4 md:right-12 md:top-6 text-xl text-white github-button">

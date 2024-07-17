@@ -57,7 +57,7 @@
         </button>
     </a>
 
-<button class="fixed right-4 top-4 md:right-6 md:top-6 text-xl text-white animate-pulse-once info-button">
+<button id="openModal" class="fixed right-4 top-4 md:right-6 md:top-6 text-xl text-white animate-pulse-once info-button">
   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
     <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path>
     <path d="M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z">
@@ -140,4 +140,46 @@
     </div>
     <button type="button" class="absolute left-20 transform -translate-x-12 bg-gray-800 text-white rounded-l py-2 px-4 lg:hidden">☰</button>
   </div>
+</div>
+
+<div id="modal" class="modal" ariahidden="false">
+    <div class="modal-content">
+        <span class="close-button close">閉じる</span>
+            <div class="feature">
+                <h2>JSON Iysisとは？</h2>
+                <p>JSON Iysisは、複雑なJSONデータを簡単に理解できる直感的な図に変換するWebサービスです。データの構造を視覚化することで、開発者やデータアナリストの作業効率を大幅に向上させます。</p>
+            </div>
+            <h3>主な機能</h3>
+            <div class="feature">
+                <h4>リアルタイム変換</h4>
+                <p>JSONデータを入力すると、即座に図に変換されます。編集しながらリアルタイムで図が更新されるので、データ構造の変更をすぐに確認できます。</p>
+            </div>
+            <div class="feature">
+                <h4>エラー検出</h4>
+                <p>JSONの構文エラーを自動的に検出し、問題のある箇所を指摘します。デバッグ作業が格段に効率化されます。</p>
+            </div>
+            <div class="feature">
+                <h4>グラフの向き変更</h4>
+                <p>縦方向や横方向など、グラフの向きを自由に変更できます。データ構造に応じて最適な表示方法を選択できます。</p>
+            </div>
+            <div class="feature">
+                <h4>画像エクスポート</h4>
+                <p>生成された図を画像としてエクスポートできます。プレゼンテーションや文書作成時に便利です。</p>
+            </div>
+
+            <div class="feature">
+                <h3>利用シーン</h3>
+                <ul>
+                    <li>Web開発でのAPI応答の確認</li>
+                    <li>データ構造の視覚化によるチーム内コミュニケーション</li>
+                    <li>複雑なJSONデータの分析</li>
+                    <li>プレゼンテーションでのデータ構造の説明</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <p>JSON Iysisは完全無料で利用できます。アカウント登録も不要です。</p>
+            </div>
+
+            <span class="close-button close">閉じる</span>
+    </div>
 </div>

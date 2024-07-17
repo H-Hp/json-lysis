@@ -4,7 +4,8 @@ export function sayHello() {
 }
 
 
-export function t() {  const button = document.getElementById('change-btn');
+export function t() {
+  const button = document.getElementById('change-btn');
   button.addEventListener('click', function() {
     const json_text = document.getElementById('json-input-field').value;
     //alert('ボタンがクリックされました3！'+json_text);
@@ -66,4 +67,33 @@ export function t() {  const button = document.getElementById('change-btn');
         console.error('JSON パースエラー:', error);
     }
   });
+
+
+
+  // モーダル
+  // モーダル要素を取得
+  var modal = document.getElementById("modal");
+  // モーダルを開くボタンを取得
+  var btn = document.getElementById("openModal");
+  // モーダルを閉じるための <span> 要素を取得
+  var span = document.getElementsByClassName("close")[0];
+  var span2 = document.getElementsByClassName("close")[1];
+  // ユーザーがボタンをクリックしたらモーダルを開く
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+  // ユーザーが <span> (x) をクリックしたらモーダルを閉じる
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  span2.onclick = function() {
+    modal.style.display = "none";
+}
+  // ユーザーがモーダルの外側をクリックしたらモーダルを閉じる
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+
 }

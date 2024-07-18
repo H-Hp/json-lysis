@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,10 +25,8 @@ Route::get('/sitemap.xml', function () {
 });
 
 
-Route::get('/', function () {
-    return view('main');
-    
-});
+//Route::get('/', function () {return view('main');});
+Route::get('/', [MainController::class, 'index']);
 
 //viteでbuildしたcssやjsへアクセスできるように
 Route::get('/build/{any}', function ($any) {

@@ -18,8 +18,16 @@ class SetLocale
     {
         $locale = $request->header('Accept-Language');
         $locale = substr($locale, 0, 2); // 最初の2文字を取得 (例: "ja", "en")
+        //$language = $request->header('Accept-Language');
+        /*if ($locale == 'en') {
+            $locale='en';
+        } else if ($locale == 'ja'){
+            $locale='ja';
+        }else if ($locale == 'zh'){
+            $locale='zh';
+        }*/
         
-        if (!in_array($locale, ['en', 'ja'])) {
+        if (!in_array($locale, ['en', 'ja', 'zh'])) {
             $locale = 'en'; // デフォルト言語を英語に設定
         }
         

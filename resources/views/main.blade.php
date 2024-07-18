@@ -50,7 +50,7 @@
 
 <div class="flex flex-col justify-between h-screen bg-gray-800 p-2 mx-auto max-w-full">
   <header class="flex items-center justify-center text-gray-200 text-2xl my-5">
-    <div class="text-4xl ml-3 mr-3">JSON Iysis - Jsonを見やすい図へ変換</div>
+    <div class="text-4xl ml-3 mr-3">{{ __('messages.title') }}</div>
   </header>
 
   <a href="https://x.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button fixed left-4 top-4 md:right-14 md:top-6 text-xl text-gray" data-show-count="false" data-text="JSON Iysis - Jsonを見やすい図へ変換" data-url="https://json-lysis.xyz" data-size="summary" >ポスト</a><script async src="https://platform.x.com/widgets.js"></script>

@@ -11,6 +11,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Googleアナリティクストラッキング tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-N4Z9LH5GT2"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-N4Z9LH5GT2');</script>
 
+<link rel="alternate" hreflang="ja" href="{{ $fullUrl = url()->current() }}"> 
+<link rel="alternate" hreflang="en" href="{{ $fullUrl = url()->current() }}"> 
+<link rel="alternate" hreflang="zh-CN" href="{{ $fullUrl = url()->current() }}"> 
+<link rel="alternate" hreflang="x-default" href="{{ $fullUrl = url()->current() }}">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -7,6 +7,7 @@
 <script src="{{ asset('/build/asset/app.js') }}"></script>
 -->
 @vite(['resources/css/app.css', 'resources/js/app.js'])
+@vite('resources/css/app.css')
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Googleアナリティクストラッキング tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-N4Z9LH5GT2"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-N4Z9LH5GT2');</script>
 

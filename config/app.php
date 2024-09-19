@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://www.json-lysis.xyz'),
+    'url' => env('APP_URL', 'https://json-lysis.xyz'),
 
     'asset_url' => env('ASSET_URL'),
 

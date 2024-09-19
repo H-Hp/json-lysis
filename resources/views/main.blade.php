@@ -73,19 +73,28 @@
 </button>
 <div class="flex w-full flex-grow overflow-hidden relative">
   <div id="chat" class="flex flex-col w-full lg:w-3/5 mr-4 mx-5 lg:mx-0">
-    <div id="json-zu" class="border-2 border-gray-600 p-6 rounded-lg overflow-y-scroll flex-grow flex flex-col justify-end bg-gray-700">
-      <div>
-      </div>
-    </div>
+      <div id="json-container" class="container"></div>
+      <svg id="lines"></svg>
+      <!-- -->
+          <div id="json-zu" class="border-2 border-gray-600 p-6 rounded-lg overflow-y-scroll flex-grow flex flex-col justify-end bg-gray-700">
+          <div></div>
+      
+  </div>
+    
 
   </div>
-  <div class="absolute transform translate-x-full transition-transform duration-500 ease-in-out right-0 w-2/3 h-full bg-gray-700 overflow-y-auto lg:static lg:translate-x-0 lg:w-2/5 lg:mx-2 rounded-lg">
+
+  <button id="storage-btn2" class="absolute right-0 w-[10px] items-center gap-2 rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-600 font-semibold text-zinc-100 hover:bg-zinc-400 active:bg-zinc-800 active:text-zinc-100/70 w-full my-2 uppercase active:scale-[98%] transition-transform duration-100 absolute right-0 w-[10px] " style="background-color:#4f6574;color:white;display:none">←</button>
+
+  <div  id="menu" class="absolute transform translate-x-full transition-transform duration-500 ease-in-out right-0 w-2/3 h-full bg-gray-700 overflow-y-auto lg:static lg:translate-x-0 lg:w-2/5 lg:mx-2 rounded-lg">
+    
     <div class="flex flex-col border-2 overflow-y-auto rounded-lg border-gray-500 w-full ">
       <div class="flex flex-col items-start sticky top-0 w-full">
           <div class="flex flex-col items-start lg:flex-row w-full lg:flex-wrap p-2">
 
           </div>              
           <div class="flex-grow w-full px-4">
+            <button id="storage-btn" class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-600 font-semibold text-zinc-100 hover:bg-zinc-400 active:bg-zinc-800 active:text-zinc-100/70 w-full my-2 uppercase active:scale-[98%] transition-transform duration-100" style="background-color:#4f6574;color:white">→</button>
             <button id="change-btn"  class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-600 font-semibold text-zinc-100 hover:bg-zinc-400 active:bg-zinc-800 active:text-zinc-100/70 w-full my-2 uppercase active:scale-[98%] transition-transform duration-100" style="background-color:#4f6574;color:white">
                 jsonを図に変換
             </button>

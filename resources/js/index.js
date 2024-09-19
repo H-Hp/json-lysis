@@ -4,7 +4,112 @@ export function sayHello() {
 }
 
 
+
+
 export function t() {
+
+  const storage_btn = document.getElementById('storage-btn');
+  storage_btn.addEventListener('click', function() {
+    //$("#menu").hide();
+      document.getElementById('menu').style.display = 'none';
+      document.getElementById('storage-btn2').style.display = 'block';
+  });
+  const storage_btn2 = document.getElementById('storage-btn2');
+  storage_btn2.addEventListener('click', function() {
+      document.getElementById('menu').style.display = 'block';
+      document.getElementById('storage-btn2').style.display = 'none';
+  });
+
+
+  const button = document.getElementById('change-btn');
+  button.addEventListener('click', function() {
+    const json_text = document.getElementById('json-input-field').value;
+    const jsonData = JSON.parse(json_text);
+    const container = document.getElementById('json-container');
+    //renderJson(json_text, container);
+    renderJson(jsonData, container);
+    drawLines();
+  });
+
+  function createJsonElement(key, value) {
+    const element = document.createElement('div');
+    element.className = 'json-item';
+    if (typeof value === 'object' && value !== null) {
+        element.textContent = `${key}: ${Array.isArray(value) ? '[]' : '{}'}`;
+    } else {
+        element.textContent = `${key}: ${value}`;
+    }
+    return element;
+}
+
+function renderJson(data, container, key = 'root') {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'child-wrapper';
+
+    const element = createJsonElement(key, data);
+    wrapper.appendChild(element);
+    container.appendChild(wrapper);
+
+    if (typeof data === 'object' && data !== null) {
+        const childrenContainer = document.createElement('div');
+        childrenContainer.className = 'children';
+        wrapper.appendChild(childrenContainer);
+
+        Object.entries(data).forEach(([childKey, childValue]) => {
+            if (Array.isArray(childValue)) {
+                const arrayWrapper = document.createElement('div');
+                arrayWrapper.className = 'array-item';
+                childrenContainer.appendChild(arrayWrapper);
+                childValue.forEach((item, index) => {
+                    renderJson(item, arrayWrapper, `${childKey}[${index}]`);
+                });
+            } else {
+                renderJson(childValue, childrenContainer, childKey);
+            }
+        });
+    }
+
+    return element;
+}
+
+function drawLines() {
+    const svg = document.getElementById('lines');
+    svg.innerHTML = '';
+
+    const items = document.querySelectorAll('.json-item');
+    items.forEach(item => {
+        const parent = item.closest('.child-wrapper').parentElement.closest('.child-wrapper')?.firstChild;
+        if (parent && parent.classList.contains('json-item')) {
+            const parentRect = parent.getBoundingClientRect();
+            const childRect = item.getBoundingClientRect();
+
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const startX = parentRect.right;
+            //const startY = parentRect.top + parentRect.height / 2;
+            const startY = parentRect.top + parentRect.height / 2 - 100;
+            const endX = childRect.left;
+            //const endY = childRect.top + childRect.height / 2;
+            const endY = childRect.top + childRect.height / 2 -100;
+            const midX = startX + (endX - startX) / 2;
+
+            const d = `M${startX},${startY} C${midX},${startY} ${midX},${endY} ${endX},${endY}`;
+            line.setAttribute('d', d);
+            line.setAttribute('fill', 'none');
+            line.setAttribute('stroke', '#888');
+            line.setAttribute('stroke-width', '2');
+
+            svg.appendChild(line);
+        }
+    });
+}
+
+
+
+window.addEventListener('resize', drawLines);
+
+
+/*
+
   const button = document.getElementById('change-btn');
   button.addEventListener('click', function() {
     const json_text = document.getElementById('json-input-field').value;
@@ -67,7 +172,7 @@ export function t() {
         console.error('JSON パースエラー:', error);
     }
   });
-
+*/
 
 
   // モーダル
